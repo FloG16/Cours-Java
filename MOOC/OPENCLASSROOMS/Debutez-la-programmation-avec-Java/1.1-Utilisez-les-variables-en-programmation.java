@@ -1,4 +1,4 @@
-Une donnée placée dans une variable s'appelle une valeur. En utilisant l'analogie des boîtes, différentes boîtes peuvent stocker différentes valeurs. 
+/*Une donnée placée dans une variable s'appelle une valeur. En utilisant l'analogie des boîtes, différentes boîtes peuvent stocker différentes valeurs. 
 
 Par exemple, vous pouvez utiliser une boîte pour ranger de l'argent pour vos dépenses courantes et une autre pour économiser en vue d'une occasion particulière, 
 
@@ -28,13 +28,13 @@ Pour utiliser une variable dans votre code, vous devez la créer, ou, en langage
 utilisées en fonction du type de valeur qu'elles contiennent. Nous y reviendrons dans la section "Allez au-delà de l'arithmétique des nombres" à la fin de ce chapitre.
 
 En Java, les variables qui contiennent des nombres sont déclarées en utilisant un mot clé tel que  int  suivi du nom d'une variable et de sa valeur initiale. 
-Par exemple :
+Par exemple :*/
 
 int ongoingAllowance = 500;
 
 int savings = 1000;
 
-Ici, nous avons déclaré deux variables :  ongoingAllowance  (allocationEnCours) et  savings  (épargne). Ces variables stockent respectivement les valeurs de 500 et 1 000.
+/*Ici, nous avons déclaré deux variables :  ongoingAllowance  (allocationEnCours) et  savings  (épargne). Ces variables stockent respectivement les valeurs de 500 et 1 000.
 
 Ici, en plus de la déclaration, nous avons également assigné les valeurs initiales aux variables, c'est-à-dire une valeur de départ que vous fixez.
 
@@ -72,7 +72,7 @@ Des problèmes du monde réel avec des solutions de programmation ! 💻 Eh oui,
 Les règles arithmétiques habituelles s'appliquent en code ! Et notamment l'ordre d'exécution !
 
 Tout comme en mathématiques, vous pouvez utiliser des parenthèses pour décider de ce qui se passe, et quand. Voyons comment vous pouvez atteindre votre objectif en 
-Java :
+Java :*/
 
 public class MyVariable {
 
@@ -111,7 +111,7 @@ public class MyVariable {
 }
 
 
-Regardez ce joli bloc de code ! Notez que toutes les lignes ne se ressemblent pas. Notez que les lignes qui commencent par  //  sont des commentaires. 
+/*Regardez ce joli bloc de code ! Notez que toutes les lignes ne se ressemblent pas. Notez que les lignes qui commencent par  //  sont des commentaires. 
 Elles servent à aider un autre humain à comprendre le code.
 
 Ici, chaque affectation assigne une valeur à une variable. Une affection est composée de trois éléments :
@@ -128,15 +128,15 @@ Oui ! Pour affecter une valeur à une variable, vous écrivez une affectation. C
 et enfin de l'expression qui produit une valeur correspondant au type de la variable.
 Écrivez un code plus court avec des opérateurs d'affectation raccourcis
 
-Chaque affectation attribue une valeur à une variable. Vous pouvez directement assigner une valeur à droite de l'opérateur d'affectation. Voici une exemple :
+Chaque affectation attribue une valeur à une variable. Vous pouvez directement assigner une valeur à droite de l'opérateur d'affectation. Voici une exemple :*/
 
 //remplacez la variable épargne par le nouveau montant
 
 savings = 10000;
 
-D'ailleurs, lorsque vous avez besoin de changer la valeur d'une variable avec des opérateurs de base et de l'affecter à cette variable, vous pouvez utiliser une 
+/*D'ailleurs, lorsque vous avez besoin de changer la valeur d'une variable avec des opérateurs de base et de l'affecter à cette variable, vous pouvez utiliser une 
 version raccourcie ! Voici un exemple. Au lieu d'utiliser  savings + 100  et l'opérateur d'affectation  =, vous pouvez utiliser un opérateur d'affectation joint à 
-l'opérateur arithmétique  +=  :
+l'opérateur arithmétique  +=  :*/
 
 // Version d'affectation normale
 
@@ -147,7 +147,7 @@ savings = savings + 100;
 
 savings += 100;
 
-Les autres variantes courtes sont :
+/*Les autres variantes courtes sont :
 
     +=  addition ;
 
@@ -207,7 +207,7 @@ On dirait que vous avez besoin de trois variables ! Pour définir chacune d'entr
 
 Vous en saurez bientôt plus sur les types de variables !
 
-Pour l'instant, il suffit de connaître ces 3 variables :
+Pour l'instant, il suffit de connaître ces 3 variables :*/
 
     String = texte
 
@@ -215,7 +215,7 @@ Pour l'instant, il suffit de connaître ces 3 variables :
 
     double = nombre en virgule flottante 
 
-En Java, vous pouvez déclarer vos trois variables comme ceci :
+//En Java, vous pouvez déclarer vos trois variables comme ceci ://
 
 String text = "A wonderful string that consists of multiple characters"
 
@@ -223,7 +223,7 @@ int numberOfVowels = 0
 
 double percentageOfVowels = 0.0
 
-Veuillez noter que lorsque vous affectez une valeur à une variable lors de sa déclaration, vous devez indiquer explicitement le type de variable dont il s'agit. 
+/*Veuillez noter que lorsque vous affectez une valeur à une variable lors de sa déclaration, vous devez indiquer explicitement le type de variable dont il s'agit. 
 Pour ce faire, ajoutez le type dans votre déclaration en utilisant les mots clés int, String ou double dans notre cas ci-dessus.
 Découvrez des variables qui ne changent jamais
 
@@ -242,7 +242,7 @@ L'utilisation de constantes est utile pour deux raisons :
 
 Lorsque vous codez, il est recommandé d'utiliser des constantes dans la mesure du possible.
 
-Déclarons quelques constantes et voyons comment elles fonctionnent. Pour déclarer une constante en Java, vous devez utiliser le mot clé final :
+Déclarons quelques constantes et voyons comment elles fonctionnent. Pour déclarer une constante en Java, vous devez utiliser le mot clé final :*/
 
 final int numberOfWeekdays = 7;
 
@@ -253,8 +253,8 @@ int numberOfPets = 1;
 
 String currentSeason = "Winter";
 
-Il y a des variables et des constantes dans l'exemple ci-dessus. Si vous essayez de modifier les valeurs de toutes ces variables, seules les variables passeront 
-et les constantes généreront des erreurs :
+/*Il y a des variables et des constantes dans l'exemple ci-dessus. Si vous essayez de modifier les valeurs de toutes ces variables, seules les variables passeront 
+et les constantes généreront des erreurs :*/
 
 numberOfWeekdays = numberOfWeekdays + 1; // Error
 
@@ -265,7 +265,7 @@ numberOfPets = 3; // Ok
 
 currentSeason = "Summer"; // Ok
 
-Si vous regardez le fonctionnement des variables dans différents langages de programmation, vous allez probablement remarquer quelques différences. Il est important 
+/*Si vous regardez le fonctionnement des variables dans différents langages de programmation, vous allez probablement remarquer quelques différences. Il est important 
 de les connaître lorsque vous commencez à programmer dans un environnement spécifique. Cependant, vous observerez aussi beaucoup de similitudes. 
 Bien que les variables puissent sembler différentes d'un langage à l'autre, les concepts restent les mêmes. Ne l'oubliez pas si vous décidez de commencer à programmer
-dans un autre langage.
+dans un autre langage.*/

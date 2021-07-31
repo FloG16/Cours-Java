@@ -1,9 +1,0 @@
-Dans ce cours, je vais vous apprendre les bases de la programmation en Java. Pour bien commencer, découvrons quelques notions indispensables !
-Qu’est-ce qu’une variable ?
-
-Commençons par les variables, notion fondamentale en développement. Le but d'un programme est de faire quelque chose avec des données ou, 
-en d'autres termes, avec les choses que vous mettez dans votre programme. Souvent, votre programme utilisera une ou plusieurs variables pour manipuler les données.
-Plus précisément, une variable est un conteneur utilisé pour stocker un élément de données dont votre programme pourrait avoir besoin.
-
-Comme mentionné dans la vidéo, une variable peut être vue comme une boîte qui contient une valeur. Cette boîte est stockée sur une étagère dans un entrepôt gigantesque.
-L'emplacement de chaque boîte de cet entrepôt est soigneusement enregistré, tout comme votre ordinateur enregistre l'emplacement de votre variable en mémoire.

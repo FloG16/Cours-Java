@@ -1,4 +1,4 @@
-Pourquoi avons-nous besoin de types de données ?
+/*Pourquoi avons-nous besoin de types de données ?
 
 Dans le chapitre précédent, vous avez découvert les types de données. Mais il reste encore tellement de choses à apprendre ! 
 Pour commencer, pourquoi avons-nous donc besoin de types de données ?
@@ -37,11 +37,11 @@ Les types numériques sont :
 Les entiers
 
 Commençons par un type que vous connaissez déjà bien : les entiers ! Les entiers sont déclarés comme n'importe quelle autre variable, avec un type, puis un nom, puis, 
-si vous l'avez, une valeur :
+si vous l'avez, une valeur :*/
 
 int count = 10;
 
-Vous reconnaissez le mot clé  int  du dernier chapitre ?
+/*Vous reconnaissez le mot clé  int  du dernier chapitre ?
 
 C'est parce que vous déclarez des entiers avec le mot clé type  int. Votre variable  count  a un type entier. Et sa valeur est de 10, qui est... un nombre entier ! 😉
 Les décimales
@@ -60,33 +60,33 @@ que la moitié de ce chiffre... Le reste serait tronqué et perdu à tout jamais
 
 Pour une précision jusqu'à 2 décimales après la virgule, vous pouvez utiliser  float.  Au-delà, ce sera  double.
 
-Ces types sont déclarés et initialisés de la façon suivante :
+Ces types sont déclarés et initialisés de la façon suivante :*/
 
 float length = 1876.79;
 
 double width = 1876.79797657;
 
-Mais que se passe-t-il si je fournis des valeurs supérieures ?
+/*Mais que se passe-t-il si je fournis des valeurs supérieures ?
 
-Par exemple :
+Par exemple :*/
 
 double a = 1876.79797657765609870978709780987;
 
 float b = 1876.79797657765609870978709780987;
 
-Eh bien, elles vont perdre toutes les deux un peu de précision, mais pas au même degré :
+//h bien, elles vont perdre toutes les deux un peu de précision, mais pas au même degré :
 
 // a -> 1876.797976
 
  // b -> 1876.79
 
-Avec des valeurs plus petites, cela ne fait aucune différence :
+//Avec des valeurs plus petites, cela ne fait aucune différence :
 
 float length = 10.0;
 
 double width = 10.0;
 
-Dans l'exemple ci-dessus, les deux variables contiennent de petites valeurs. Sur la deuxième ligne, nous utilisons simplement  double  au lieu de  float. Comme cela 
+/*ns l'exemple ci-dessus, les deux variables contiennent de petites valeurs. Sur la deuxième ligne, nous utilisons simplement  double  au lieu de  float. Comme cela 
 ne fait aucune différence fonctionnelle, je vous encourage à utiliser la plus petite dans cet exemple, puisque l'utilisation d'une plus grande boîte pour stocker les
 petites valeurs gaspille de la mémoire !
 
@@ -101,7 +101,7 @@ que cela peut avoir. Par exemple, si vous divisez deux nombres :  5/2, on s'atte
 
 Vous voyez ? Les ordinateurs ne sont pas aussi intelligents que nous !
 
-Passons en revue quelques exemples dans Java :
+Passons en revue quelques exemples dans Java :*/
 
 int a = 10;
 
@@ -109,7 +109,7 @@ int b = 4;
 
 int c = a/b;
 
-Devinez quel sera le résultat de la division ?
+/*vinez quel sera le résultat de la division ?
 
 Eh bien, c'est  2  – pas forcément ce à quoi on s'attendait, n'est-ce pas ?
 
@@ -118,7 +118,7 @@ comme réponse.
 
 Une division entre deux entiers s'appelle une division entière. Elle a toujours pour résultat un nombre entier.
 
-Mais que se passera-t-il avec le code ci-dessous ?
+Mais que se passera-t-il avec le code ci-dessous ?*/
 
 int a = 10;
 
@@ -126,12 +126,12 @@ int b = 4;
 
 double c = a/b;
 
-Cette fois,  c  va pouvoir stocker un nombre décimal. Cependant, l'expression  a/b  divise toujours un  int  avec un autre  int. Donc  c  se verra assigné le 
+/*tte fois,  c  va pouvoir stocker un nombre décimal. Cependant, l'expression  a/b  divise toujours un  int  avec un autre  int. Donc  c  se verra assigné le 
 résultat de la division entière. Ce qui fait, encore une fois, 2.
 
 Zut...Cela ne fonctionne toujours pas. 😫
 
-Pour obtenir un résultat avec des décimaux, il va falloir combiner deux types.
+Pour obtenir un résultat avec des décimaux, il va falloir combiner deux types.*/
 
 int a = 10;
 
@@ -139,14 +139,14 @@ double b = 4;
 
 int c = a/b;
 
-Vous voyez comment la variable  a  été déclarée avec  int  et la variable  b  avec  double ?
+/* voyez comment la variable  a  été déclarée avec  int  et la variable  b  avec  double ?
 
 Dans cet exemple, le résultat de l'expression  a/b  sera bien un nombre décimal,  2,5.
 
 Cependant,  c  est déclaré comme un  int  et ne peut pas se voir attribuer une valeur décimale. Cette affectation n'est pas possible !
 
 Vous pouvez faire en sorte qu'une variable d'un type agisse comme un autre type. C'est ce qu'on appelle le type casting (ou la conversion d'une valeur dans un autre 
-type). Pour résoudre le problème que nous avons eu dans le dernier exemple, faites croire à la variable  b  que c'est un entier en l'assignant à  c  comme ci-dessous :
+type). Pour résoudre le problème que nous avons eu dans le dernier exemple, faites croire à la variable  b  que c'est un entier en l'assignant à  c  comme ci-dessous :*/
 
 int a = 10;
 
@@ -154,9 +154,8 @@ double b = 4;
 
 int c = a/ (int) b; //-> c contient 2, car a /(int) b est une division entière
 
-Vous voyez comment nous avons fait pour que la variable  b  agisse comme un nombre entier ? Vous pouvez aussi faire en sorte qu’une variable entière  b fasse 
-comme si 
-sa valeur était  double  :
+/*Vous voyez comment nous avons fait pour que la variable  b  agisse comme un nombre entier ? Vous pouvez aussi faire en sorte qu’une variable entière  b fasse 
+comme si sa valeur était  double  :*/
 
 int a = 10;
 
@@ -164,12 +163,12 @@ int b = 4;
 
 double c = a/(double) b; //-> c contient 2.5, car la valeur de b est transformée en double
 
-Convertir une variable en  double  vous permet d'effectuer une division en virgule flottante, même si vous utilisez des variables avec un type entier  int.
+/*Convertir une variable en  double  vous permet d'effectuer une division en virgule flottante, même si vous utilisez des variables avec un type entier  int.
 
 Découvrez les chaînes de caractères (strings)
 
 Passons maintenant à un type plus complexe, les strings. Les strings (ou chaînes de caractères) permettent de stocker du texte, ou en d'autres termes, un ensemble 
-de caractères. Voici comment déclarer une variable string dans Java :
+de caractères. Voici comment déclarer une variable string dans Java :*/
 
 String city = "New York";
 
@@ -179,7 +178,7 @@ String pet;
 
 String emptyString = "";
 
-Vous pouvez fusionner une ou plusieurs d'entre elles. Rassemblons quelques  strings  :
+//Vous pouvez fusionner une ou plusieurs d'entre elles. Rassemblons quelques  strings  :
 
 String firstFavoriteCity = "New York";
 
@@ -187,9 +186,9 @@ String secondFavoriteCity = "Buenos Aires";
 
 String favorites = firstFavoriteCity + secondFavoriteCity; // -> "New YorkBuenos Aires"
 
- Mais, il n'y a pas d'espace entre les deux. C'est bizarre, non ?
+/*Mais, il n'y a pas d'espace entre les deux. C'est bizarre, non ?
 
-Rendons ce code plus lisible en concaténant, c'est-à-dire en mettant bout à bout des chaînes de caractères et des variables :
+Rendons ce code plus lisible en concaténant, c'est-à-dire en mettant bout à bout des chaînes de caractères et des variables :*/
 
 String firstFavoriteCity = "New York"
 
@@ -198,9 +197,9 @@ String secondFavoriteCity = "Buenos Aires"
 
 String favorites = "My favorite cities are " +firstFavoriteCity+ " and "+secondFavoriteCity; // -> "My favorite cities are New York and Buenos Aires"
 
-C'est beaucoup mieux maintenant ! Vous pouvez également concaténer d'autres types de données avec des chaînes de caractères, telles que des nombres.
+/*C'est beaucoup mieux maintenant ! Vous pouvez également concaténer d'autres types de données avec des chaînes de caractères, telles que des nombres.
 
-Ah oui ? Mais comment je procède ?
+Ah oui ? Mais comment je procède ?*/
 
 String favoriteCity = "Buenos Aires";
 
@@ -208,8 +207,7 @@ int numberOfTrips = 5;
 
 
 String story = "I've traveled to " +favoriteCity+ " " +numberOfTrips+ " times!"; // -> "I've traveled to Buenos Aires 5 times!"
-
-Juste avant, nous avons utilisé l'opérateur  +  pour ajouter deux nombres. Ici, avec des chaînes de caractères, l'opérateur  +  peut être utilisé pour concaténer 
+/*Juste avant, nous avons utilisé l'opérateur  +  pour ajouter deux nombres. Ici, avec des chaînes de caractères, l'opérateur  +  peut être utilisé pour concaténer 
 des chaînes et des nombres entiers. La concaténation fait référence à l'assemblage de chaînes de caractères ou de nombres, et de chaînes de caractères.
 En résumé
 
@@ -229,5 +227,5 @@ Vous avez aussi appris à manipuler ces types :
 
     les chaînes peuvent être mises bout à bout. Cela s'appelle la concaténation.
 
-Dans le chapitre suivant, nous aborderons la fonction main ; c'est le point d'entrée de votre programme.
+Dans le chapitre suivant, nous aborderons la fonction main ; c'est le point d'entrée de votre programme.*/
 
